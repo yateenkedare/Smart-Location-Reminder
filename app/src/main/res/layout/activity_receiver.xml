@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rozrost.www.alertscreen.Receiver"
+    android:background="#e20a0a0a"
+    android:keepScreenOn="true">
+        <RelativeLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="549dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Location Alert!"
+                android:id="@+id/LocationtextView"
+                android:textSize="48dp"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Title"
+                android:id="@+id/titleTextView"
+                android:textSize="41dp"
+                android:layout_below="@+id/textView3"
+                android:textColor="#ffffff"
+                android:layout_alignLeft="@+id/LocationtextView"
+                android:layout_alignStart="@+id/LocationtextView"
+                android:layout_alignRight="@+id/LocationtextView"
+                android:layout_alignEnd="@+id/LocationtextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="You&apos;ve reached near"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/LocationtextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="62dp"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Task"
+                android:id="@+id/recieverTaskView"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/titleTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="75dp">
+                <Button
+                    android:id="@+id/snoozebutton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SNOOZE"
+                    android:background="#0442eb"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+                <Button
+                    android:id="@+id/btnStopAlarm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="STOP"
+                    android:background="#fd0202"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+        </RelativeLayout>
+</FrameLayout>
